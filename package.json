@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "webpack --progress",
+    "prestart": "npm run build",
+    "start": "open dist/index.html"
   },
   "repository": {
     "type": "git",

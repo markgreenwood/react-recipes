@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Menu from './components/Menu';
+import RecipeMenu from './components/Menu';
 import data from '../data/recipes.json';
 
 window.React = React;
 
 render(
-  <Menu recipes={data} />,
+  <RecipeMenu recipes={data} />, // eslint-disable-line no-unused-vars
   document.getElementById('react-container')
 );
